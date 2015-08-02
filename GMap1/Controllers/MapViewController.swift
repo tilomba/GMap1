@@ -114,6 +114,39 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
   }
   func mapView(mapView: GMSMapView!, willMove gesture: Bool) {
     addressLabel.lock()
+    if (gesture) {
+      mapCenterPinImage.fadeIn(0.25)
+      mapView.selectedMarker = nil
+    }
+  }
+  
+  func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
+    let placeMarker = marker as! PlaceMarker
+    
+    if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
+      infoView.nameLabel.text = placeMarker.place.name
+      
+      if let photo = placeMarker.place.photo {
+        infoView.placePhoto.image = photo
+      } else {
+        infoView.placePhoto.image = UIImage(named: "generic")
+      }
+      
+      return infoView
+    } else {
+      return nil
+    }
+  }
+  
+  func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
+    mapCenterPinImage.fadeOut(0.25)
+    return false
+  }
+  
+  func didTapMyLocationButtonForMapView(mapView: GMSMapView!) -> Bool {
+    mapCenterPinImage.fadeIn(0.25)
+    mapView.selectedMarker = nil
+    return false
   }
   
   func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
