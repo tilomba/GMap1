@@ -33,6 +33,8 @@
 		FB0A83F41AFFC22A005EB80A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0A83F31AFFC22A005EB80A /* OpenGLES.framework */; };
 		FB0A83F61AFFC232005EB80A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0A83F51AFFC232005EB80A /* QuartzCore.framework */; };
 		FB0A83F81AFFC23D005EB80A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0A83F71AFFC23D005EB80A /* SystemConfiguration.framework */; };
+		FB3654741B6E2883008B9615 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3654731B6E2883008B9615 /* CoreBluetooth.framework */; };
+		FB3654761B6E288E008B9615 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3654751B6E288E008B9615 /* Accelerate.framework */; };
 		FB6F3F7C1B5BCB5E00EBD365 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F3F7B1B5BCB5E00EBD365 /* PlaceMarker.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		FB0A83F51AFFC232005EB80A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FB0A83F71AFFC23D005EB80A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FB0A83F91AFFC2D7005EB80A /* GMap1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMap1-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB3654731B6E2883008B9615 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FB3654751B6E288E008B9615 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		FB6F3F7B1B5BCB5E00EBD365 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3654761B6E288E008B9615 /* Accelerate.framework in Frameworks */,
+				FB3654741B6E2883008B9615 /* CoreBluetooth.framework in Frameworks */,
 				FB0A83F81AFFC23D005EB80A /* SystemConfiguration.framework in Frameworks */,
 				FB0A83F61AFFC232005EB80A /* QuartzCore.framework in Frameworks */,
 				FB0A83F41AFFC22A005EB80A /* OpenGLES.framework in Frameworks */,
@@ -217,6 +223,8 @@
 		B48F649D19B231D500710BEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB3654751B6E288E008B9615 /* Accelerate.framework */,
+				FB3654731B6E2883008B9615 /* CoreBluetooth.framework */,
 				FB0A83F71AFFC23D005EB80A /* SystemConfiguration.framework */,
 				FB0A83F51AFFC232005EB80A /* QuartzCore.framework */,
 				FB0A83F31AFFC22A005EB80A /* OpenGLES.framework */,
