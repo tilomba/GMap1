@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C6F13EC8-53EE-45D8-ADB0-FC8A282C902B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GMap1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BBCFFF8A89BD47C352D1589009D56DA8EBF8BC5A</key>
+		<string>github.com:tilomba/GMap1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GMap1.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BBCFFF8A89BD47C352D1589009D56DA8EBF8BC5A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:tilomba/GMap1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BBCFFF8A89BD47C352D1589009D56DA8EBF8BC5A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BBCFFF8A89BD47C352D1589009D56DA8EBF8BC5A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GMap1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
