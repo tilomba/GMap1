@@ -26,6 +26,15 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
   }
   let dataProvider = GoogleDataProvider()
 
+  var randomLineColor: UIColor {
+    get {
+      let randomRed = CGFloat(drand48())
+      let randomGreen = CGFloat(drand48())
+      let randomBlue = CGFloat(drand48())
+      return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+    }
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -135,6 +144,29 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
       return infoView
     } else {
       return nil
+    }
+  }
+  
+  func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
+    // 1
+    let googleMarker = mapView.selectedMarker as! PlaceMarker
+    
+    // 2
+    dataProvider.fetchDirectionsFrom(mapView.myLocation.coordinate, to: googleMarker.place.coordinate) {optionalRoute in
+      if let encodedRoute = optionalRoute {
+        // 3
+        let path = GMSPath(fromEncodedPath: encodedRoute)
+        let line = GMSPolyline(path: path)
+        
+        // 4
+        line.strokeWidth = 4.0
+        line.strokeColor = self.randomLineColor
+        line.tappable = true
+        line.map = self.mapView
+        
+        // 5
+        mapView.selectedMarker = nil
+      }
     }
   }
   
